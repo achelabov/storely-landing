@@ -106,7 +106,7 @@ const HeroSection: React.FC = () => {
         {/* Добавляем кликабельный текст с анимацией и градиентной рамкой */}
         <Box
           as="a"
-          href="https://knowyouruser.ru" // Укажите ссылку на KYU
+          href="https://knowyouruser.ru/?utm_source=storely&utm_content=landing" // Укажите ссылку на KYU
           target="_blank"
           rel="noopener noreferrer"
           display="flex"
@@ -155,8 +155,8 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Управляйте товарами.
-                <Br /> Продавайте больше
+                Продавай больше
+                <Br /> Расти быстрее
               </FallInPlace>
             }
             description={
