@@ -106,28 +106,28 @@ const HeroSection: React.FC = () => {
         {/* Добавляем кликабельный текст с анимацией и градиентной рамкой */}
         <Box
           as="a"
-          href="https://knowyouruser.ru/?utm_source=storely&utm_content=landing" // Укажите ссылку на KYU
+          href="https://knowyouruser.ru/?utm_source=storely&utm_content=landing"
           target="_blank"
           rel="noopener noreferrer"
           display="flex"
           justifyContent="center"
           alignItems="center"
-          fontSize="md" // Уменьшаем размер шрифта
-          fontWeight="normal" // Тонкий шрифт
+          fontSize={{ base: 'sm', md: 'md' }} // Уменьшаем размер шрифта на мобильных устройствах
+          fontWeight="normal"
           color="white"
           mb="8"
-          p="2" // Уменьшаем отступы
-          borderRadius="15px" // Уменьшаем радиус скругления
+          p="2"
+          borderRadius="15px"
           position="relative"
           transition="all 0.3s ease"
           _hover={{
             transform: 'translateY(-5px)',
             opacity: 0.9,
           }}
-          mx="auto" // Центрирование по горизонтали
-          width="240px" // Ограничение ширины
-          bg="transparent" // Прозрачный фон
-          mt="3" // Поднимаем текст ещё выше
+          mx="auto"
+          width={{ base: '200px', md: '240px' }} // Уменьшаем ширину на мобильных устройствах
+          bg="transparent"
+          mt={{ base: '30px', lg: '3' }} // Съезжает вниз на мобильных устройствах
           _before={{
             content: '""',
             position: 'absolute',
@@ -135,7 +135,7 @@ const HeroSection: React.FC = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            borderRadius: '20px', // Уменьшаем радиус скругления рамки
+            borderRadius: '20px',
             border: '2px solid transparent',
             background: 'linear-gradient(45deg,rgb(13, 177, 203),rgb(158, 59, 251)) border-box',
             zIndex: -1,
