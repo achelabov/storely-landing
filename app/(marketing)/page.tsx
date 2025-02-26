@@ -60,11 +60,6 @@ import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
-export const meta: Metadata = {
-  title: 'Storely — Платформа для интернет-магазинов',
-  description: 'Создавайте и управляйте интернет-магазинами с легкостью.',
-}
-
 import Script from 'next/script'; // Импортируем компонент Script
 
 const Home: NextPage = () => {
@@ -481,7 +476,7 @@ const TestimonialsSection = () => {
   return (
     <Testimonials
       title="Отзывы клиентов"
-      columns={[1, 2, 3]}
+      columns={[1, 2]}
       innerWidth="container.xl"
     >
       <>
