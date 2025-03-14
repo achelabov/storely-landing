@@ -80,7 +80,7 @@ const Home: NextPage = () => {
 
       <HeroSection />
       <TemplatesSection />
-      <HighlightsSection />
+      {/* <HighlightsSection /> */}
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />
